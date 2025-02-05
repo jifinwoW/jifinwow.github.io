@@ -296,7 +296,7 @@ padding: 0 60px 0 60px;
     padding: 0 0 200px 0;
 }
 #hero-3 h5{
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Proxima Nova';
     font-weight: 300;
     color: #C4C4C4;
@@ -328,6 +328,7 @@ padding: 0 60px 0 60px;
     font-weight: 300;
     letter-spacing: 3px;
     color: #606161;
+    font-size: 24px;
 }
 .gradient-text {
     font-size: 50px;
@@ -348,7 +349,7 @@ padding: 0 60px 0 60px;
 }
 
 .carousel {
-    width: 65%;
+    width: 80%;
     margin: auto;
     padding-top: 20px;
 }
@@ -441,4 +442,190 @@ padding: 0 60px 0 60px;
     border-radius: 10px;
     width: 60%;
     height: 300px;
+}
+
+#hero-5{
+    padding: 0 0 200px 0;
+    text-align: center;
+}
+.bg-img2{
+    background: url('../img/cont-bg.jpg');
+    width: 100%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff; 
+    align-content: center;
+    padding: 10px;
+    text-align: left;
+   
+}
+.bg-img2 h2{
+    font-size: 50px;
+}
+.bg-img2 h5 {
+    font-size: 24px;
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    color: #C4C4C4;
+    letter-spacing: 3px;
+    opacity: 0.7;
+}
+.bg-img2 p{
+    
+        color: #C4C4C4;
+        font-size: 18px;
+        font-weight: 300;
+        width: 430px;
+        margin-top: 30px;
+    
+}
+input{
+    margin-bottom: 20px;
+    background-color: rgba(196, 196, 196, 0.5) !important; 
+ border: none !important;
+
+    color: #000 !important;
+}
+select{
+    width: 150px !important;
+    margin-bottom: 20px;
+    background-color: rgba(196, 196, 196, 0.1) !important; 
+      color: #fff !important;
+      font-weight: 100 !important;
+      --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+input::placeholder{
+    color: #ffffff !important;
+    font-weight: 200;
+}
+
+ 
+ /* Ensure carousel-inner handles overflow smoothly */
+.carousel-inner {
+    position: relative;
+    overflow: hidden; /* Keep the overflow hidden for smooth transition */
+  }
+  
+  .carousel-item {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Wrapper that will apply the shadow */
+  .card-shadow-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 10px; /* Adjust padding to give space for the shadow */
+    margin: 10px;  /* Adjust margin if needed */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Apply shadow here */
+    border-radius: 15px; /* Match the card's border radius */
+     width: 260px !important;
+  }
+  
+  .card-container {
+    max-width: 260px !important;
+    margin: 0 auto !important;
+    background-color: #fff !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+  }
+  
+
+.card-container h2 {
+    font-size: 22px !important;    
+    font-weight: 600 !important;
+    color: #69539E !important;
+}
+.card-container h5 {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1;
+    letter-spacing: 0px !important;
+}
+.card-container img{
+    width: 80px !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+}
+.shd .carousel-content{
+    overflow: visible !important;
+}
+.bg-img3{
+    background: url('../img/footer.jpg');
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff; 
+  padding-top: 100px;
+  
+    text-align: left;
+   
+}
+.bg-img3 p{
+    font-size: 12px;
+    font-weight: 200;
+}
+ul{
+    list-style: none;
+}
+.list-p p{
+    font-size: 18px;
+}
+.ico{
+    width: 25px;
+}
+/* Apply basic form-control styles */
+.select-control-wrapper{
+    width: fit-content;
+}
+.select-control {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: rgba(196, 196, 196, 0.1) !important; 
+    color: #fff;
+
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Add focus effect */
+.select-control:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25);
+}
+
+/* Remove default arrow */
+.select-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+}
+
+/* Custom arrow using CSS */
+.select-control::-ms-expand {
+    display: none;
+}
+
+.select-control-wrapper {
+    position: relative;
+}
+
+/* Create custom arrow */
+.select-control-wrapper::after {
+    content: '▼';
+    font-size: 16px;
+    color: #495057;
+    position: absolute;
+   top: 50%;
+    pointer-events: none; /* Prevent interaction with the arrow */
 }
