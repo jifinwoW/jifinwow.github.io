@@ -629,3 +629,113 @@ ul{
    top: 50%;
     pointer-events: none; /* Prevent interaction with the arrow */
 }
+/* General Mobile Optimization */
+@media (max-width: 992px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .nav_bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nav_bar .navigation ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-img {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-img h3 {
+        font-size: 3rem;
+    }
+
+    .hero-img h1 {
+        font-size: 4rem;
+    }
+
+    .hero-img p {
+        font-size: 1rem;
+    }
+
+    .gradient-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-2 ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #hero-2 ul li {
+        flex: 1 1 50%;
+        text-align: center;
+        padding: 20px;
+        border-right: none;
+    }
+    
+    .bg-img {
+        padding-left: 20px;
+    }
+    
+    .bg-img h3, .bg-img h2 {
+        text-align: center;
+    }
+
+    .carousel-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        margin: 0;
+    }
+
+    .curved-bg img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-img h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-img h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-img p {
+        font-size: 0.9rem;
+    }
+
+    #hero-3 p, #hero-3 h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel-inner .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-content {
+        margin-bottom: 20px;
+    }
+
+    .bg-img3 {
+        height: auto;
+        padding-top: 50px;
+    }
+}
