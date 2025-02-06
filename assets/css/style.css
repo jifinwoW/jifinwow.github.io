@@ -775,9 +775,19 @@ ul{
     }
 
     .hero-img h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
-
+    .hero-img ul a li{
+        font-size: 10px;
+    }
+    #hero-3 h5 {
+        font-size: 24px;
+        font-family: 'Proxima Nova';
+        font-weight: 300;
+        color: #C4C4C4;
+        letter-spacing: 3px;
+        text-align: center;
+    }
     .hero-img p {
         font-size: 0.9rem;
     }
