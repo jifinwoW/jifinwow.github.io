@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             `).join("");
 
         let slide = `<div class="carousel-item ${activeClass}">
-                        <div class="row justify-content-center">${slideItems}</div>
+                        <div class="row widthspec justify-content-center">${slideItems}</div>
                      </div>`;
         carouselInner.innerHTML += slide;
     }
