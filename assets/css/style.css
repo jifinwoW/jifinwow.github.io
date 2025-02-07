@@ -490,7 +490,7 @@ padding: 0 60px 0 60px;
     background-size: cover;
     color: #ffffff; 
     align-content: center;
-    padding: 10px;
+    padding: 20px 10px 20px 10px;
     text-align: left;
    
 }
@@ -624,6 +624,8 @@ ul{
     font-size: 18px;
     text-align: center;
     margin-right: -45px;
+    margin-left: -10px;
+    margin-top: 10px;
 }
 .select-control {
     display: inline-block;
@@ -819,6 +821,13 @@ ul{
 }
 
 @media (max-width: 768px) {
+    .footer-logo p {
+        font-size: 18px;
+        text-align: center;
+        margin-right: 5px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
     .hero-img h3 {
         font-size: 1.5rem;
     }
@@ -872,5 +881,20 @@ ul{
     }
     .bg-img2 h2 {
         font-size: 2.5rem;
+    }
+    .copyright p {
+        font-size: 18px !important;
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    .terms {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: center;
     }
 }
