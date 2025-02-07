@@ -51,6 +51,10 @@ p {
     font-weight: 400;
   
 }
+a{
+    color: #fff;
+    text-decoration: none;
+}
 
 .light-text {
     font-family: 'Proxima Nova', sans-serif;
@@ -772,7 +776,7 @@ ul{
     }
     .footer-logo{
         width: 120px;
-        float: left;
+        align-items: flex-start;
     }
 
 }
@@ -795,7 +799,12 @@ ul{
         padding: 20px;
         border-right: none;
     }
-    
+    .footer-section p{
+        font-size: 1rem;
+    }
+    .footer-section-social p{
+        font-size: 1rem;
+    }
     .bg-img {
         padding-left: 20px;
     }
@@ -803,7 +812,9 @@ ul{
     .bg-img h3, .bg-img h2 {
         text-align: center;
     }
-   
+    .terms p {
+        font-size: 16px !important;
+    }
 
     .carousel-content img {
         width: 100%;
@@ -951,7 +962,7 @@ ul{
         margin-bottom: 20px;
     }
     .copyright p {
-        font-size: 18px !important;
+        font-size: 16px !important;
         text-align: center;
         margin-left: 0px;
     }
