@@ -907,6 +907,9 @@ ul{
     .bg-img2 h2 {
         font-size: 2rem;
     }
+    #hero-2 {
+        padding: 50px 50px 50px 50px
+    }
     .copyright p {
         font-size: 18px !important;
         text-align: center;
