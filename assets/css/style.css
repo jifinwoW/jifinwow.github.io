@@ -858,6 +858,12 @@ ul{
         width: 100%;
         text-align: center;
     }
+    #hero-4 p {
+        color: #868787;
+        font-size: 18px;
+        font-weight: 200;
+        margin-top: 30px;
+    }
 
     .hero-img p {
         font-size: 0.9rem;
@@ -899,7 +905,7 @@ ul{
         margin-top: 30px;
     }
     .bg-img2 h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .copyright p {
         font-size: 18px !important;
