@@ -867,6 +867,12 @@ ul{
         text-align: center;
         font-size: 25px;
     }
+    .bg-img {
+    
+        height: auto;
+        background-position: 78% 50%;
+       
+    }
 
     .carousel-inner .row {
         flex-direction: column;
