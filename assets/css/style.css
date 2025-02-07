@@ -855,13 +855,14 @@ ul{
     }
     #hero-3 p{
         font-size: 18px;
+        width: 100%;
+        text-align: center;
     }
 
     .hero-img p {
         font-size: 0.9rem;
     }
-
-    #hero-3 p, #hero-3 h3 {
+    #hero-3 h3 {
         width: 100%;
         text-align: center;
     }
