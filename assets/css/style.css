@@ -865,6 +865,7 @@ ul{
     #hero-3 h3 {
         width: 100%;
         text-align: center;
+        font-size: 25px;
     }
 
     .carousel-inner .row {
