@@ -905,18 +905,5 @@ ul{
         align-items: center;
         justify-content: center;
     }
-    #hero-3 p{
-        color: #C4C4C4;
-        font-size: 18px;
-        font-weight: 300;
-        width: 520px;
-        margin-top: 0px;
-    }
-    #hero-3 h3{
-        color: #ffffff;
-        width: 560px;
-        font-size: 1.5rem;
-        margin-top: 0px;
-        font-weight: 100;
-    }
+
 }
