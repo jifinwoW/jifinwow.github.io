@@ -25,13 +25,13 @@
                 </div>
                 <div class="navigation">
                     <ul>
-                        <a href="">
+                        <a onclick="document.getElementById('hero-3').scrollIntoView({ behavior: 'smooth' })">
                             <li>ABOUT ADS</li>
                         </a>
-                        <a href="">
+                        <a onclick="document.getElementById('wee').scrollIntoView({ behavior: 'smooth' })">
                             <li>ABOUT KALYAN</li>
                         </a>
-                        <a href="">
+                        <a onclick="document.getElementById('hero-5').scrollIntoView({ behavior: 'smooth' })">
                             <li>CONTACT</li>
                         </a>
                     </ul>
@@ -39,9 +39,7 @@
             </div>
             <h3>LUXURY IS</h3>
             <h1 class="trajan-text">WHERE YOU LIVE</h1>
-            <p align="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh this is
-                neuismod<br>
-                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+            <p align="center">Introducing A DIFFERENT STORY, an exquisite luxury project by Kalyan Developers, expertly <br>managed by the renowned UK-based consultancy, Jones Lang Lasalle (JLL).
             </p>
             <button class="gradient-btn">EXPLORE</button>
 
@@ -115,9 +113,7 @@
             <h1 class="gradient-text trajan-text">
                 OUR GALLERY
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br>
-                ugfdgsx sdfsdf laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis<br>
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p class="gal_cap">An unparalleled opportunity to own one of just twenty-five exclusive waterfront residences, each designed to perfection with 10,000–11,000 sq. ft. of luxurious living space, spread across a stunning 2.5 acres. Each apartment features a magnificent 2,000 sq. ft. landscaped terrace and exclusive elevator access for added convenience. Enjoy a lifestyle enriched with lavish amenities and advanced security management systems.</p>
 
             <div id="multiCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -138,28 +134,41 @@
 
     </section>
 
-    <section class="section-wave">
+    <section id="about-kalyan" class="section-wave">
         <img src="assets/img/Asset 3@2x.png" style="width: 100%;" alt="">
     </section>
 
 
     <section id="hero-4">
-
+        <section id="wee"></section>
         <div class="container">
-
+          
             <h5>LOREM IPSUM</h5>
             <h1 class="gradient-text trajan-text">
                 ABOUT KALYAN
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br>
-                ugfdgsx sdfsdf laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis<br>
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Kalyan Developers, Kerala’s leading real estate developer owned by the promoters of Kalyan Jewelers,<br> unveils the most exclusive, 11,000-square-foot sky mansion in Thevara, Kochi.</p>
             <br>
+           
             <div class="curved-bg">
-                <img src="assets/img/lvroom.jpg" alt="">
+                <img src="assets/img/lvroom.jpg" alt="Background Image">
+                <button class="play-button" id="openVideo">&#9658;</button>
             </div>
         </div>
     </section>
+   
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video width="640" height="360" controls autoplay muted>
+                <source src="assets/videos/ADS Teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+        </div>
+    </div>
+    
 
 
     <section id="hero-5">
@@ -240,12 +249,12 @@
                     </div>
                     <div class="col-md-4">
                         <div class="footer-section" class="list-p">
-                            <div style="width: 100%;">
+                           
                                 <p>About ADS</p>
                                 <p>About Kalayan</p>
                                 <p>Support</p>
                                 <p>Contact</p>
-                            </div>
+                           
 
                         </div>
                     </div>
@@ -284,14 +293,14 @@
                     </div>
                     <div class="col-md-6">
                         <div class="terms visible-xs">
-                            <p>Terms</p>
-                            <p>Privacy</p>
-                            <p>+1664867454567</p>
+                            <p>Terms & Service</p>
+                            <p>Privacy Policy</p>
+                           
                         </div>
                         <div class="terms visible-lg">
                             <p>Terms & Service</p>
                             <p>Privacy Policy</p>
-                            <p>+1664867454567</p>
+                           
                         </div>
                         
                     </div>

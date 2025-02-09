@@ -132,3 +132,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+document.getElementById("openVideo").onclick = function() {
+    document.getElementById("videoModal").style.display = "block";
+};
+
+document.querySelector(".close").onclick = function() {
+    let modal = document.getElementById("videoModal");
+    modal.style.display = "none";
+
+    // Stop the video when the modal closes
+    let iframe = document.getElementById("videoFrame");
+    iframe.src = iframe.src;
+};
+
+window.onclick = function(event) {
+    let modal = document.getElementById("videoModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+        let iframe = document.getElementById("videoFrame");
+        iframe.src = iframe.src;
+    }
+};
+
