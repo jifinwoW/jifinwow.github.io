@@ -779,6 +779,126 @@ ul{
     color: black;
 }
 
+/* Hide menu on larger screens */
+.mobile-menu {
+    display: none;
+}
+
+/* Show menu only for mobile screens */
+/* Hide menu on larger screens */
+.mobile-menu {
+    display: none;
+}
+
+/* Show menu only on mobile */
+/* Hide menu on larger screens */
+.mobile-menu {
+    display: none;
+}
+/* Hide menu on larger screens */
+.mobile-menu {
+    display: none;
+}
+
+/* Show menu only on mobile */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    /* Menu Button (Hamburger Icon) */
+    .menu-btn {
+        background: #ff5733;
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .menu-btn:hover {
+        background: #e64a1b;
+    }
+
+    /* Slide-in Menu */
+    .mobile-menu-list {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Initially hidden */
+        width: 250px;
+        height: 100vh; /* Full height */
+        background: white;
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        justify-content: flex-start; /* Items start from the top */
+        transition: right 0.4s ease-in-out;
+        padding-top: 60px; /* Space for close button */
+    }
+
+    .mobile-menu-list a {
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+        display: block;
+        font-size: 18px;
+        transition: 0.3s;
+        text-align: left;
+    }
+
+    .mobile-menu-list a:hover {
+        background: #f0f0f0;
+    }
+
+    /* Close Button */
+    .close-btn {
+        background: transparent;
+        border: none;
+        font-size: 28px;
+        color: black;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: red;
+    }
+
+    /* Menu Open State */
+    .mobile-menu-list.active {
+        right: 0; /* Slide in */
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .play-button {
+        font-size: 30px;  /* Smaller icon */
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .play-button {
+        font-size: 24px;  /* Even smaller for very small screens */
+        width: 40px;
+        height: 40px;
+    }
+}
+
 /* General Mobile Optimization */
 @media (max-width: 992px) {
     .container {

@@ -155,3 +155,22 @@ window.onclick = function(event) {
     }
 };
 
+
+document.getElementById("mobileMenuToggle").onclick = function () {
+    document.getElementById("mobileMenuItems").classList.add("active");
+};
+
+document.getElementById("closeMenu").onclick = function () {
+    document.getElementById("mobileMenuItems").classList.remove("active");
+};
+
+// Close menu when clicking outside
+window.onclick = function (event) {
+    let menu = document.getElementById("mobileMenuItems");
+    let button = document.getElementById("mobileMenuToggle");
+    let closeBtn = document.getElementById("closeMenu");
+
+    if (event.target !== menu && event.target !== button && event.target !== closeBtn) {
+        menu.classList.remove("active");
+    }
+};
