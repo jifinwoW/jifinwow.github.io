@@ -809,7 +809,9 @@ ul{
         right: 10px;
         z-index: 1000;
     }
-
+.footer-section{
+    align-items: flex-start;
+}
     /* Menu Button (Hamburger Icon) */
     .menu-btn {
         background: #ff5733;
