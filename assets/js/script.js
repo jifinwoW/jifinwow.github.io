@@ -158,19 +158,22 @@ window.onclick = function(event) {
 
 document.getElementById("mobileMenuToggle").onclick = function () {
     document.getElementById("mobileMenuItems").classList.add("active");
+    document.getElementById("overlay").classList.add("active");
 };
 
 document.getElementById("closeMenu").onclick = function () {
     document.getElementById("mobileMenuItems").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
 };
 
 // Close menu when clicking outside
 window.onclick = function (event) {
     let menu = document.getElementById("mobileMenuItems");
     let button = document.getElementById("mobileMenuToggle");
-    let closeBtn = document.getElementById("closeMenu");
+    let overlay = document.getElementById("overlay");
 
-    if (event.target !== menu && event.target !== button && event.target !== closeBtn) {
+    if (event.target === overlay) {
         menu.classList.remove("active");
+        overlay.classList.remove("active");
     }
 };
