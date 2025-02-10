@@ -199,9 +199,18 @@ $(document).ready(function() {
                 }
             },
             error: function(xhr, status, error) {
-                $("#errorMessage").text("AJAX Error: " + xhr.responseText).fadeIn().delay(3000).fadeOut();
+                let errorMessage = "Something went wrong. Please try again."; // Default error message
+            
+                if (xhr.responseJSON && xhr.responseJSON.message) {
+                    errorMessage = xhr.responseJSON.message; // Extract message from JSON response
+                } else if (xhr.responseText) {
+                    errorMessage = xhr.responseText; // Use plain response text if JSON is unavailable
+                }
+            
+                $("#errorMessage").text(errorMessage).fadeIn().delay(3000).fadeOut();
                 $("#successMessage").hide();
             }
+            
         });
     });
 });
