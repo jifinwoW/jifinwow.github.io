@@ -799,6 +799,7 @@ ul{
     font-size: 20px;
     cursor: pointer;
     color: black;
+    z-index: 9999999;
 }
 
 /* Hide menu on larger screens */
