@@ -177,3 +177,31 @@ window.onclick = function (event) {
         overlay.classList.remove("active");
     }
 };
+
+
+$(document).ready(function() {
+    $("#submit_form").submit(function(e) {
+        e.preventDefault();
+        
+        $.ajax({
+            url: "process.php",
+            type: "POST",
+            data: $(this).serialize(),
+            dataType: "json",
+            success: function(response) {
+                if (response.status === "success") {
+                    $("#successMessage").text(response.message).fadeIn().delay(3000).fadeOut();
+                    $("#errorMessage").hide();
+                    $("#ajaxForm")[0].reset();
+                } else {
+                    $("#errorMessage").text(response.message).fadeIn().delay(3000).fadeOut();
+                    $("#successMessage").hide();
+                }
+            },
+            error: function() {
+                $("#errorMessage").text("Something went wrong. Please try again.").fadeIn().delay(3000).fadeOut();
+                $("#successMessage").hide();
+            }
+        });
+    });
+});
