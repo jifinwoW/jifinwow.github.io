@@ -198,8 +198,8 @@ $(document).ready(function() {
                     $("#successMessage").hide();
                 }
             },
-            error: function() {
-                $("#errorMessage").text("Something went wrong. Please try again.").fadeIn().delay(3000).fadeOut();
+            error: function(error) {
+                $("#errorMessage").text(error).fadeIn().delay(3000).fadeOut();
                 $("#successMessage").hide();
             }
         });
