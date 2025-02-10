@@ -3,7 +3,7 @@ header("Content-Type: application/json");
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     $name = htmlspecialchars($_POST["name"]);
     $phone = htmlspecialchars($_POST["mobile"]);
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);

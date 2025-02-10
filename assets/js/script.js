@@ -198,8 +198,8 @@ $(document).ready(function() {
                     $("#successMessage").hide();
                 }
             },
-            error: function(error) {
-                $("#errorMessage").text(error).fadeIn().delay(3000).fadeOut();
+            error: function(xhr, status, error) {
+                $("#errorMessage").text("AJAX Error: " + xhr.responseText).fadeIn().delay(3000).fadeOut();
                 $("#successMessage").hide();
             }
         });
